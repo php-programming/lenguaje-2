@@ -22,6 +22,8 @@ jobs:
       # Paso 1: Obtener el código fuente del repositorio
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true
 
       # Paso 2: Configurar el entorno de Python
       - name: Set up Python
@@ -35,7 +37,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Paso 4: Construir el sitio estático
-      # El comando "mkdocs gh-deploy" construye el sitio y lo empuja a la rama gh-pages
-      - name: Deploy
-        run: mkdocs gh-deploy --force --clean
+      # Paso 4: Construir el sitio estático localmente
+      - name: Build site
+        run: |
+          mkdocs build
+
+      # Paso 5: Desplegar usando una acción robusta para GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages
+          # Mantener la historia en la rama en lugar de forzar un orphan push
+          force_orphan: false
