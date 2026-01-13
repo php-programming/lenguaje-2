@@ -1,0 +1,202 @@
+site_name: SISA | Ingeniería de Software
+site_author: Alonzo Centeno
+site_url: https://github.com/php-programming/lenguaje-2
+copyright: 'Copyright &copy; 2026 Alonzo Centeno - Arquitecto del Sistema'
+
+repo_name: SISA-Core
+repo_url: https://github.com/php-programming/lenguaje-2
+
+theme:
+  name: material
+  language: es
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: light-blue
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: light-blue
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  font:
+    text: Roboto
+    code: JetBrains Mono
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+
+nav:
+  - 'Inicio': index.md
+  
+  - 'Unidad 1: Gestión de Código (Git/GitHub)':
+    - 'Introducción': Unidad_1/README.md
+    - '1. Fundamentos VCS': 
+      - 'Conceptos': Unidad_1/01_Fundamentos_VCS/README.md
+      - '1.1 ¿Qué es un VCS?': Unidad_1/01_Fundamentos_VCS/1.1_Que_es_un_VCS.md
+      - '1.2 Arquitecturas': Unidad_1/01_Fundamentos_VCS/1.2_Arquitecturas_VCS.md
+      - '1.3 Git como DAG': Unidad_1/01_Fundamentos_VCS/1.3_Git_como_DAG.md
+    - '2. Arquitectura Git Local':
+      - 'Conceptos': Unidad_1/02_Arquitectura_Git_Local/README.md
+      - '2.1 Modelo Tres Estados': Unidad_1/02_Arquitectura_Git_Local/2.1_Modelo_de_Tres_Estados.md
+      - '2.2 Objeto Commit': Unidad_1/02_Arquitectura_Git_Local/2.2_El_Objeto_Commit.md
+      - '2.3 Comandos Core': Unidad_1/02_Arquitectura_Git_Local/2.3_Comandos_Fundamentales.md
+    - '3. GitHub Colaborativo':
+      - 'Conceptos': Unidad_1/03_GitHub_Plataforma_Colaborativa/README.md
+      - '3.1 Plataforma GitHub': Unidad_1/03_GitHub_Plataforma_Colaborativa/3.1_Mas_alla_del_Remoto.md
+      - '3.2 Pull Requests': Unidad_1/03_GitHub_Plataforma_Colaborativa/3.2_Flujo_de_Colaboracion.md
+      - '3.3 CI/CD Actions': Unidad_1/03_GitHub_Plataforma_Colaborativa/3.3_GitHub_Actions_y_CI_CD.md
+      - '3.4 GitOps e IaC': Unidad_1/03_GitHub_Plataforma_Colaborativa/3.4_GitOps_e_IaC.md
+    - '4. Estrategias de Ramificación':
+      - 'Conceptos': Unidad_1/04_Estrategias_de_Ramificacion/README.md
+      - '4.1 Ramificación': Unidad_1/04_Estrategias_de_Ramificacion/4.1_Concepto_de_Rama.md
+      - '4.2 GitFlow': Unidad_1/04_Estrategias_de_Ramificacion/4.2_GitFlow.md
+      - '4.3 Trunk-Based': Unidad_1/04_Estrategias_de_Ramificacion/4.3_Trunk_Based_Development.md
+      - '4.4 Merge vs Rebase': Unidad_1/04_Estrategias_de_Ramificacion/4.4_Merging_vs_Rebasing.md
+    - 'Bonus: Comandos': Unidad_1/05_Bonus_Hoja_de_Ruta_Comandos/README.md
+
+  - 'Unidad 2: Diseño de Bases de Datos':
+    - 'Introducción': Unidad_2/README.md
+    - '1. Fundamentos BDRR':
+      - 'Conceptos': Unidad_2/01_Fundamentos_BDRR/README.md
+      - '1.1 Modelo Relacional': Unidad_2/01_Fundamentos_BDRR/1.1_Modelo_Relacional.md
+      - '1.2 Integridad': Unidad_2/01_Fundamentos_BDRR/1.2_Integridad_de_Datos.md
+    - '2. Normalización':
+      - 'Conceptos': Unidad_2/02_Normalizacion/README.md
+      - '2.1 Anomalías': Unidad_2/02_Normalizacion/2.1_Anomalias_y_Dependencias.md
+      - '2.2 Primera Forma (1NF)': Unidad_2/02_Normalizacion/2.2_Primera_Forma_Normal.md
+      - '2.3 Segunda Forma (2NF)': Unidad_2/02_Normalizacion/2.3_Segunda_Forma_Normal.md
+      - '2.4 Tercera Forma (3NF)': Unidad_2/02_Normalizacion/2.4_Tercera_Forma_Normal.md
+      - '2.5 Desnormalización': Unidad_2/02_Normalizacion/2.5_Desnormalizacion_y_BI.md
+    - '3. Herramientas de Gestión':
+      - 'Conceptos': Unidad_2/03_Herramientas_Gestion/README.md
+      - '3.1 Herramientas GUI': Unidad_2/03_Herramientas_Gestion/3.1_Rol_de_las_GUI.md
+      - '3.2 Motores BD': Unidad_2/03_Herramientas_Gestion/3.2_Motores_de_BD.md
+      - '3.3 Conexiones': Unidad_2/03_Herramientas_Gestion/3.3_Conexion_a_Gestores.md
+
+  - 'Unidad 3: Fundamentos Backend (PHP)':
+    - 'Introducción': Unidad_3/README.md
+    - '3.1 Cliente-Servidor': Unidad_3/01_Entorno_y_Arquitectura/3.1_Arquitectura_Cliente_Servidor.md
+    - '3.2 Sintaxis y Tipos': Unidad_3/02_Sintaxis_y_Tipado/3.2_Sintaxis_Tipado.md
+    - '3.3 Arrays y Estructuras': Unidad_3/03_Estructuras_de_Datos/3.3_Arrays.md
+
+  - 'Unidad 4: Lógica Algorítmica':
+    - 'Introducción': Unidad_4/README.md
+    - '4.1 Condicionales': Unidad_4/01_Control_de_Flujo/4.1_Condicionales.md
+    - '4.2 Ciclos e Iteraciones': Unidad_4/02_Algoritmos_Iterativos/4.2_Ciclos.md
+
+  - 'Unidad 5: Seguridad (DevSecOps)':
+    - 'Introducción': Unidad_5/README.md
+    - '5.1 Validación Input': Unidad_5/01_Fundamentos_Seguridad/5.1_Principios_Validacion.md
+    - '5.2 Prevención XSS/SQLi': Unidad_5/02_Prevencion_Ataques/5.2_XSS_SQLi.md
+    - '5.3 Criptografía': Unidad_5/03_Criptografia_Aplicada/5.3_Hashing.md
+
+  - 'Unidad 6: Ciclo de Vida (SDLC)':
+    - 'Introducción': Unidad_6/README.md
+    - '6.1 Roles de Ingeniería': Unidad_6/01_Roles_Ingenieria/6.1_Roles.md
+    - '6.2 Fases del SDLC': Unidad_6/02_Ciclo_de_Vida_SDLC/6.2_SDLC.md
+
+  - 'Unidad 7: Programación Orientada a Objetos':
+    - 'Introducción': Unidad_7/README.md
+    - '7.1 Paradigma POO': Unidad_7/01_Fundamentos_POO/7.1_Definicion_POO.md
+    - '7.2 Clases y Objetos': Unidad_7/01_Fundamentos_POO/7.2_Clases_y_Objetos.md
+    - '7.3 Atributos y Métodos': Unidad_7/01_Fundamentos_POO/7.3_Atributos_Metodos.md
+    - '7.4 Herencia': Unidad_7/01_Fundamentos_POO/7.4_Herencia_Encapsulamiento.md
+    - '7.5 Interfaces': Unidad_7/02_Propiedades_Avanzadas/7.5_Interfaces.md
+    - '7.6 Traits': Unidad_7/02_Propiedades_Avanzadas/7.6_Traits.md
+    - '7.7 Namespaces': Unidad_7/02_Propiedades_Avanzadas/7.7_Namespaces_Autoload.md
+
+  - 'Unidad 8: Arquitectura de Software':
+    - 'Introducción': Unidad_8/README.md
+    - '8.1 Patrones': Unidad_8/01_Patrones_Arquitectonicos/8.1_Patrones_Arquitectonicos.md
+    - '8.2 Modelos POO': Unidad_8/02_Modelos_POO/8.2_Modelos_POO.md
+
+  - 'Unidad 9: Patrón MVC':
+    - 'Introducción': Unidad_9/README.md
+    - '1. Controladores':
+      - 'Conceptos': Unidad_9/01_Controlador_Modelos/README.md
+      - '9.1 Concepto MVC': Unidad_9/01_Controlador_Modelos/9.1_Concepto_MVC.md
+      - '9.2 Controlador': Unidad_9/01_Controlador_Modelos/9.2_Rol_Controlador.md
+    - '2. Abstracción':
+      - 'Conceptos': Unidad_9/02_Controlador_Generico/README.md
+      - '9.3 Controlador Genérico': Unidad_9/02_Controlador_Generico/9.3_Concepto_Generico.md
+      - '9.4 Herencia Aplicada': Unidad_9/02_Controlador_Generico/9.4_Aplicacion_Herencia.md
+    - '3. Intercambio Datos':
+      - 'Conceptos': Unidad_9/03_JSON/README.md
+      - '9.5 JSON': Unidad_9/03_JSON/9.5_Concepto_JSON.md
+      - '9.6 Implementación API': Unidad_9/03_JSON/9.6_Implementacion_PHP.md
+
+  - 'Unidad 10: Core del Framework':
+    - 'Introducción': Unidad_10/README.md
+    - '1. Autoload':
+      - 'Conceptos': Unidad_10/01_Autoload/README.md
+      - '10.1 Configuración': Unidad_10/01_Autoload/10.1_Autoload_Config.md
+    - '2. Enrutamiento':
+      - 'Conceptos': Unidad_10/02_Enrutamiento/README.md
+      - '10.2 Método Router': Unidad_10/02_Enrutamiento/10.2_Metodo_Enrutamiento.md
+    - '3. Rutas Personalizadas':
+      - 'Conceptos': Unidad_10/03_Rutas_Personalizadas/README.md
+      - '10.3 Implementación': Unidad_10/03_Rutas_Personalizadas/10.3_Rutas_Personalizadas.md
+
+  - 'Unidad 11: Gestión de Recursos':
+    - 'Introducción': unidad_11/README.md
+    - '1. URI/URL':
+      - 'Conceptos': unidad_11/01_URL_URI/README.md
+      - '11.1 Definiciones': unidad_11/01_URL_URI/11.1_Definicion_URI_URL.md
+      - '11.2 Helper URL': unidad_11/01_URL_URI/11.2_Controlador_POO_URI.md
+
+  - 'Unidad 12: Capa de Presentación':
+    - 'Introducción': unidad_12/README.md
+    - '1. Motor de Vistas':
+      - 'Conceptos': unidad_12/01_Controlador_Vistas/README.md
+      - '12.1 Definición': unidad_12/01_Controlador_Vistas/12.1_Definicion_Vistas.md
+      - '12.2 Implementación': unidad_12/01_Controlador_Vistas/12.2_Generacion_Controlador.md
+    - '2. Maquetación':
+      - 'Conceptos': unidad_12/02_Maquetacion/README.md
+      - '12.3 Layouts': unidad_12/02_Maquetacion/12.3_Maquetacion_Vistas.md
+
+  - 'Unidad 13: Modularidad':
+    - 'Introducción': Unidad_13/README.md
+    - '13.1 Ecosistema y Composer': Unidad_13/01_Componentes_Modulos/13.1_Ecosistema_Software.md
+
+  - 'Unidad 14: Frontend Moderno':
+    - 'Introducción': Unidad_14/README.md
+    - '1. DOM y Eventos':
+      - '14.1 Definición DOM': Unidad_14/01_DOM_JavaScript/14.1_DOM.md
+      - '14.2 Integración JS': Unidad_14/01_DOM_JavaScript/14.2_Integracion_JS.md
+    - '2. AJAX/Fetch':
+      - '14.3 Definición AJAX': Unidad_14/02_Fundamentos_AJAX/14.3_AJAX.md
+      - '14.4 Integración PHP': Unidad_14/02_Fundamentos_AJAX/14.4_Integracion_AJAX_PHP.md
+
+  - 'Unidad 15: Integración Full Stack':
+    - 'Introducción': Unidad_15/README.md
+    - '15.1 Integración SPA': Unidad_15/01_Integracion_AJAX_PHP/15.1_Integracion_Completa.md
+
+  - 'Unidad 16: Reportes':
+    - 'Introducción': Unidad_16/README.md
+    - '16.1 Generación PDF': Unidad_16/01_Reportes_PDF/16.1_Generacion_PDF.md

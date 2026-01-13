@@ -1,0 +1,20 @@
+.vscode/
+# Entornos virtuales
+venv/
+.venv/
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+
+# Archivos de entorno locales
+.env
+
+# Dependencias de Node
+node_modules/
+
+# Sistema
+.DS_Store
+
+# IDEs
+.idea/

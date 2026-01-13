@@ -1,0 +1,41 @@
+# Flujo de trabajo para construir y desplegar un sitio de MkDocs en GitHub Pages
+name: Deploy MkDocs Site to GitHub Pages
+
+# Controles de cuándo se ejecutará el workflow
+on:
+  # Se activa en pushes a la rama "main"
+  push:
+    branches: ["main"]
+
+  # Permite ejecutar este workflow manualmente desde la pestaña de Actions en GitHub
+  workflow_dispatch:
+
+# Un workflow se compone de uno o más jobs que pueden ejecutarse secuencialmente o en paralelo
+jobs:
+  # El job de despliegue
+  deploy:
+    # El tipo de runner en el que se ejecutará el job
+    runs-on: ubuntu-latest
+
+    # Los pasos representan una secuencia de tareas que se ejecutarán como parte del job
+    steps:
+      # Paso 1: Obtener el código fuente del repositorio
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Paso 2: Configurar el entorno de Python
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.8
+
+      # Paso 3: Instalar las dependencias de Python definidas en requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Paso 4: Construir el sitio estático
+      # El comando "mkdocs gh-deploy" construye el sitio y lo empuja a la rama gh-pages
+      - name: Deploy
+        run: mkdocs gh-deploy --force --clean
