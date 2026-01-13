@@ -34,7 +34,7 @@ En la industria, el código no es propiedad personal; es un activo corporativo q
 
 Para aprobar esta unidad, no basta con leer. Debes completar el siguiente reto en tu máquina local:
 
-1.  **Inicializar:** Crea un repositorio para un proyecto ficticio "SISA-Core".
+1.  **Inicializar:** Crea un repositorio para un proyecto ficticio "Architek-Core".
 2.  **Simular:** Crea una rama `feature/login`. Haz 3 commits simulando el desarrollo.
 3.  **Conflicto:** Vuelve a `main`, crea un cambio en el mismo archivo (simulando a otro compañero) y haz commit.
 4.  **Resolución:** Intenta fusionar `feature/login` en `main`. Git reportará conflicto. Resuélvelo manualmente y finaliza el merge.

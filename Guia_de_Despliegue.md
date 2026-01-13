@@ -2,7 +2,7 @@
 
 ## Caso de Uso
 
-**Escenario:** El proyecto SISA ha crecido hasta convertirse en un cuerpo de conocimiento detallado. Ahora se requiere que esta documentación esté disponible públicamente como un sitio web profesional, navegable y con un diseño limpio. El proceso de actualización del sitio debe ser automático cada vez que se actualiza el contenido.
+**Escenario:** El proyecto Architek-Pro ha crecido hasta convertirse en un cuerpo de conocimiento detallado. Ahora se requiere que esta documentación esté disponible públicamente como un sitio web profesional, navegable y con un diseño limpio. El proceso de actualización del sitio debe ser automático cada vez que se actualiza el contenido.
 
 **Requisitos de Sistema:**
 1.  **Generación Automatizada:** El sitio web debe generarse directamente desde los archivos Markdown existentes sin intervención manual.
@@ -57,7 +57,7 @@ graph TD
 ### 1. `requirements.txt`
 Este archivo es el **manifiesto de dependencias** de Python. Le dice a cualquier entorno (sea su máquina local o un runner de GitHub Actions) qué paquetes de software necesita este proyecto para funcionar.
 -   `mkdocs`: El motor principal del generador de sitios.
--   `mkdocs-material`: Un tema popular y altamente configurable para MkDocs que hemos elegido para el SISA. Proporciona un diseño moderno, búsqueda integrada y soporte nativo para diagramas Mermaid.
+-   `mkdocs-material`: Un tema popular y altamente configurable para MkDocs que hemos elegido para Architek-Pro. Proporciona un diseño moderno, búsqueda integrada y soporte nativo para diagramas Mermaid.
 
 ### 2. `mkdocs.yml`
 Este es el **archivo de configuración principal** para nuestro sitio de documentación.

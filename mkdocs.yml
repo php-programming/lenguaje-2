@@ -1,9 +1,9 @@
-site_name: SISA | Ingeniería de Software
+site_name: Architek-Pro | Ingeniería de Software
 site_author: Alonzo Centeno
 site_url: https://github.com/php-programming/lenguaje-2
 copyright: 'Copyright &copy; 2026 Alonzo Centeno - Arquitecto del Sistema'
 
-repo_name: SISA-Core
+repo_name: Architek-Pro-Core
 repo_url: https://github.com/php-programming/lenguaje-2
 
 theme:

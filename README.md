@@ -1,4 +1,4 @@
-# 🚀 Sistema de Ingeniería de Sistemas Asistido (SISA)
+# 🚀 Architek-Pro
 > **Perfil:** Catedrático Senior 2026 | **Enfoque:** Análisis, Diseño y Complejidad.
 
 ## 📊 Roadmap de Aprendizaje e Interactividad
@@ -7,7 +7,7 @@ A continuación, se presenta la arquitectura del conocimiento. Cada unidad inclu
 
 Breve descripción
 ------------------
-SISA es un repositorio docente modular en Markdown diseñado para la enseñanza de Ingeniería de Software. Contiene unidades teóricas, laboratorios prácticos y diagramas (Mermaid) organizados dentro de la carpeta `docs/`. El sitio está diseñado para publicarse con MkDocs (tema Material) y tiene un pipeline de despliegue en GitHub Actions.
+Architek-Pro es un repositorio docente modular en Markdown diseñado para la enseñanza de Ingeniería de Software. Contiene unidades teóricas, laboratorios prácticos y diagramas (Mermaid) organizados dentro de la carpeta `docs/`. El sitio está diseñado para publicarse con MkDocs (tema Material) y tiene un pipeline de despliegue en GitHub Actions.
 
 Herramientas del Entorno
 ------------------------

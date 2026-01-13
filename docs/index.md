@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# Sistema de Ingeniería de Sistemas Asistido (SISA)
+# Architek-Pro
 
 !!! info "Arquitecto del Sistema: Alonzo Centeno"
     Bienvenido al núcleo de documentación técnica. Este portal centraliza el conocimiento de ingeniería de software, desde los fundamentos de control de versiones hasta la arquitectura de sistemas distribuidos.
@@ -136,7 +136,7 @@ hide:
 ## 🛡️ Integridad Académica y Fuentes
 
 !!! quote "Declaración de Calidad"
-    Todo el contenido de este Sistema de Ingeniería de Sistemas Asistido (SISA) ha sido rigurosamente recopilado, sintetizado y adaptado a partir de **fuentes oficiales, documentación técnica verificada y estándares de la industria**. No se utiliza información especulativa o no contrastada.
+    Todo el contenido de este proyecto Architek-Pro ha sido rigurosamente recopilado, sintetizado y adaptado a partir de **fuentes oficiales, documentación técnica verificada y estándares de la industria**. No se utiliza información especulativa o no contrastada.
 
 ### Bibliografía y Referencias Técnicas
 

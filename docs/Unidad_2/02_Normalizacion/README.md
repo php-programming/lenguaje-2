@@ -2,7 +2,7 @@
 
 Esta sección es el núcleo ingenieril del diseño de bases de datos. La normalización no es un concepto abstracto, sino un **proceso de diseño algorítmico** cuyo objetivo es refactorizar un esquema de base de datos para minimizar la redundancia y eliminar las anomalías de datos.
 
-Utilizaremos el caso de uso del "Sistema de Gestión Académica del SISA" como nuestro campo de pruebas. Partiremos de un diseño "plano" e intuitivo (y peligrosamente incorrecto) y lo someteremos al rigor de las tres primeras Formas Normales, demostrando cómo cada paso mejora la integridad y la estructura de nuestro modelo de datos.
+Utilizaremos el caso de uso del "Sistema de Gestión Académica de Architek-Pro" como nuestro campo de pruebas. Partiremos de un diseño "plano" e intuitivo (y peligrosamente incorrecto) y lo someteremos al rigor de las tres primeras Formas Normales, demostrando cómo cada paso mejora la integridad y la estructura de nuestro modelo de datos.
 
 ## Contenidos
 

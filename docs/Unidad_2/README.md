@@ -2,13 +2,13 @@
 
 ## Caso de Uso del Sistema
 
-**Escenario:** Se nos ha encargado diseñar la arquitectura de datos para el **"Sistema de Gestión Académica del SISA"**. Este sistema debe gestionar la información de estudiantes, los cursos que se ofrecen, los profesores que los imparten y las inscripciones de los estudiantes en dichos cursos.
+**Escenario:** Se nos ha encargado diseñar la arquitectura de datos para el **"Sistema de Gestión Académica de Architek-Pro"**. Este sistema debe gestionar la información de estudiantes, los cursos que se ofrecen, los profesores que los imparten y las inscripciones de los estudiantes en dichos cursos.
 
 **Requisitos de Integridad de Datos:**
 1.  **Consistencia:** La información debe ser consistente en todo el sistema. El nombre de un curso debe ser el mismo independientemente de cuántos estudiantes estén inscritos.
 2.  **No Redundancia:** Se debe minimizar la duplicación de datos. Almacenar el nombre de un profesor en cada registro de inscripción es ineficiente y propenso a errores.
 3.  **Prevención de Anomalías:** El diseño debe impedir operaciones que dejen la base de datos en un estado inconsistente. Por ejemplo, no debe ser posible eliminar a un estudiante y dejar sus registros de inscripción "huérfanos".
-4.  **Escalabilidad:** El diseño debe soportar el crecimiento futuro del SISA, tanto en volumen de datos como en complejidad de las relaciones.
+4.  **Escalabilidad:** El diseño debe soportar el crecimiento futuro de Architek-Pro, tanto en volumen de datos como en complejidad de las relaciones.
 
 ## Introducción a la Unidad
 
@@ -22,7 +22,7 @@ En esta unidad, trataremos el diseño de bases de datos como una disciplina de *
     *   Estableceremos el vocabulario técnico del modelo relacional (Entidades, Atributos, Claves) y los principios de integridad de datos.
 
 *   **Sección 2: [El Proceso de Normalización](./02_Normalizacion/README.md)**
-    *   Este es el núcleo de la unidad. Analizaremos las **anomalías de datos** y utilizaremos las **Dependencias Funcionales** como herramienta para progresar a través de la Primera, Segunda y Tercera Forma Normal (1NF, 2NF, 3NF), refactorizando el esquema de nuestro SISA en cada paso.
+    *   Este es el núcleo de la unidad. Analizaremos las **anomalías de datos** y utilizaremos las **Dependencias Funcionales** como herramienta para progresar a través de la Primera, Segunda y Tercera Forma Normal (1NF, 2NF, 3NF), refactorizando el esquema de nuestro Architek-Pro en cada paso.
 
 *   **Sección 3: [Herramientas de Gestión](./03_Herramientas_Gestion/README.md)**
     *   Finalmente, revisaremos las herramientas gráficas (GUIs) como MySQL Workbench o DBeaver, contextualizándolas como interfaces para implementar y consultar el diseño lógico que hemos construido.
