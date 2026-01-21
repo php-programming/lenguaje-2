@@ -200,3 +200,6 @@ nav:
   - 'Unidad 16: Reportes':
     - 'Introducción': Unidad_16/README.md
     - '16.1 Generación PDF': Unidad_16/01_Reportes_PDF/16.1_Generacion_PDF.md
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
